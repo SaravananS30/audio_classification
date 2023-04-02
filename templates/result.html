@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Environmental Sound Classification</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Environmental Sound Classification</h1>
+	{% if prediction %}
+		<p>The predicted sound class is <strong>{{ prediction }}</strong>.</p>
+	{% else %}
+		<p>No sound file uploaded.</p>
+	{% endif %}
+	<form method="POST" enctype="multipart/form-data" action="/predict">
+		<label for="audio">Upload an environmental sound file (.wav):</label>
+		<input type="file" id="audio" name="audio" accept="audio/wav">
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>

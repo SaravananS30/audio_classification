@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environmental Sound Classification - Upload</title>
+   <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Environmental Sound Classification</h1>
+      <form method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+        <label for="audio-file">Select an audio file:</label><br><br>
+
+        <input type="file" name="audio-file" id="audio-file"><br>
+        <input type="submit" value="Predict"><br><br>
+        {{prediction_text}}
+      </form>
+    </div>
+  </body>
+</html>

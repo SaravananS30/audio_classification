@@ -1,0 +1,52 @@
+
+body {
+  background-image: url("https://raw.githubusercontent.com/halildurmus/siri_wave/main/gifs/ios_9.gif");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.container {
+  
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  width: 350px;
+  height: 280px;
+  background-color: #ffff
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
